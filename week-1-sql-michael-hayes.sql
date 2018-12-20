@@ -92,7 +92,7 @@ SELECT carrier, COUNT(*) FROM flights GROUP BY carrier ORDER BY COUNT(*) DESC LI
 SELECT carrier, COUNT(*) FROM flights WHERE distance > 1000 GROUP BY carrier ORDER BY COUNT(*) DESC LIMIT 5
 
 # Question 8
-# Shop the top 5 airlines based on highest average departure delay.
+# Show the top 5 airlines based on highest average departure delay.
 
 SELECT carrier, AVG(dep_delay) FROM flights GROUP BY carrier ORDER BY AVG(dep_delay) DESC LIMIT 5
 
